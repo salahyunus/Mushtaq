@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="Dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Mushtaq Account Login - Sign Up page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="The complete guide for Hajj, Umrah and Masjid al-Nabawi rituals, Here is your launch gate to holy journey" />
+  <link rel="stylesheet" type="text/css" href="../Stylesheets/Style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../Resources/Images/Favicon/LOGO.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../Resources/Images/Favicon/LOGO.png" />
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../Resources/Images/Favicon/LOGO.png" />
+  <link rel="icon" type="image/svg+xml" href="../Resources/Images/Favicon/LOGO.png" />
+  <meta name="theme" content="Dark" />
+  <meta property="author" content="Salah" />
+  <meta property="og:title" content="Mushtaq" />
+  <meta property="og:description"
+    content="The complete guide for Hajj, Umrah and Masjid al-Nabawi rituals, Here is your launch gate to holy journey" />
+  <meta property="og:image" content="../Resources/Images/OGIMG.png" />
+  <script src="https://kit.fontawesome.com/fe2fb62a15.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="Accountb">
+  <div id="Navbar" class="Navigation">
+    <ul>
+      <li>
+        <a href="../Index.html">
+          <span class="NLogo"><img src="../Resources/Images/NLogo.png" /></span>
+          <span class="NtitleL">Mushtaq</span>
+        </a>
+      </li>
+      <li>
+        <a href="../Index.html">
+          <span class="Nicon"><i class="fa-solid fa-house"></i></span>
+          <span class="Ntitle">Homepage</span>
+        </a>
+      </li>
+      <li class="Tagged">
+        <a href="Account.html">
+          <span class="Nicon"><i class="fa-solid fa-user-tie"></i></span>
+          <span class="Ntitle">Me</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="Nicon"><i class="fa-solid fa-comments"></i></span>
+          <span class="Ntitle">Fatwa Gate <span class="new">NEW</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="Nicon"><i class="fa-solid fa-plane-departure"></i></span>
+          <span class="Ntitle">Holy Tour</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="Nicon"><i class="fa-solid fa-kaaba"></i></span>
+          <span class="Ntitle">Makkah</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="Nicon"><i class="fa-solid fa-mosque"></i></span>
+          <span class="Ntitle">Medina</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="Nicon"><i class="fa-solid fa-passport"></i></span>
+          <span class="Ntitle">Visa</span>
+        </a>
+      </li>
+      <li>
+        <a href="Signout.html">
+          <span class="Nicon"><i class="fa-solid fa-right-from-bracket"></i></span>
+          <span class="Ntitle">Sign Out</span>
+        </a>
+      </li>
+    </ul>
+    <div class="NavToggle"></div>
+  </div>
+  <div class="AccountBG BGOverlay">
+    <img src="../Resources/Images/Parallax/SKY.jpeg" alt="Sky" class="lbg" />
+    <img src="../Resources/Images/Parallax/KAABA.jpeg" alt="Kaaba" class="kaaba" />
+    <img src="../Resources/Images/Parallax/PEOPLE.jpeg" alt="People" class="people" />
+    <div class="sliderAC PPLoverllay"></div>
+    <img src="../Resources/Images/Parallax/KBG.jpeg" alt="KBG" class="KBG" />
+    <img src="../Resources/Images/Parallax/MM.jpeg" alt="MM" class="MM" />
+  </div>
+  <div class="wrapper wrapperflex" id="LoginBox">
+    <div class="form-box login" id="LoginForm">
+      <h2>Login</h2>
+      <form onsubmit="return validateForm();">
+        <div class="input-box" id="Login-Email">
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" required id="L-Email"/>
+          <label>Email</label>
+        </div>
+        <div class="input-box" id="Login-Password">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" required id="L-Password"/>
+          <label>Password</label>
+        </div>
+        <div class="remember-forget">
+          <input type="checkbox" />
+          <label>Remember me</label>
+          <a href="javascript:resetp()" class="forgotp" data-replace="Reset it now"><span>Forgot password</span></a>
+        </div>
+        <div class="login-register">
+          <a href="javascript:RegiSwitch()" class="forgotp" data-replace="Create one!"><span class="re">Don't have an
+              account?</span></a>
+        </div>
+        <button class="Submitbtn" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <div class="wrapper wrapperflex" id="Register">
+    <div class="form-box login" id="regis">
+      <h2>Create An Account</h2>
+      <form action="Profile.html" id="RegisForm">
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-user-secret"></i></span>
+          <input type="text" required id="R-User"/>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" required id="R-Email"/>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock-open"></i></span>
+          <input type="password" required id="R-Pass"/>
+          <label>Choose a Password</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" required />
+          <label>Confirm Password</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-palette"></i></span>
+          <label class="clr"> What's your favorite color 🤔</label><br>
+          <div class="cp_wrapper">
+            <input type="color" name="cp_1" value="#8888ff" id="CL" />
+          </div>
+        </div>
+        <div class="remember-forget">
+          <input type="checkbox" required />
+          <label>I agree to <a href="Terms.html" class="forgotp" data-replace="terms & conditions"><span>terms &
+                conditions</span></a></label>
+        </div>
+        <div class="login-register">
+          <a href="javascript:LoginSwitch()" class="forgotp" data-replace="Sign In!"><span class="re">Already have an
+              account?</span></a>
+        </div>
+        <button class="Submitbtn" type="submit">Create Account</button>
+      </form>
+    </div>
+  </div>
+  <div class="wrapper resetp wrapperflex" id="Reset">
+    <div class="form-box login res">
+      <h2>Reset Password</h2>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock-open"></i></span>
+          <input type="password" required id="frst_re"/>
+          <label>New Password</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" required id="scnd_re"/>
+          <label>Confirm Password</label>
+        </div>
+        <div class="remember-forget">
+          <input type="checkbox" required />
+          <label>I agree to <a href="Terms.html" class="forgotp" data-replace="terms & conditions"><span>terms &
+                conditions</span></a></label>
+        </div>
+        <div class="login-register">
+          <a href="javascript:LoginSwitch()" class="forgotp" data-replace="Go back!"><span class="re">Remembered your password?</span></a>
+        </div>
+        <button class="Submitbtn" id="resetps" type="submit" onclick="validateMyForm()">Reset Password</button>
+    </div>
+  </div>
+  </div>
+  <div class="RM">
+    <div class="RMcontent">
+      <ul class="Rmenu">
+        <li class="Ritem">
+          <i class="fa-solid fa-hand-point-left"></i>
+          <span>
+            <a href="javascript:history.back()">Go Back </a>
+          </span>
+        </li>
+        <li class="Ritem sub">
+          <div>
+            <i class="fa-solid fa-parachute-box"></i>
+            <span>Go to...</span>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+          <ul class="sub-menu">
+            <li class="Ritem">
+              <a href="Index.html">
+                <span class="Nicon"><i class="fa-solid fa-house"></i></span>
+                <span class="Ntitle">Homepage</span>
+              </a>
+            </li>
+            <li class="Ritem">
+              <a href="Pages/Account.html">
+                <span class="Nicon"
+                  ><i class="fa-solid fa-user-tie"></i
+                ></span>
+                <span class="Ntitle">Me</span>
+              </a>
+            </li>
+            <li class="Ritem">
+              <a href="#">
+                <span class="Nicon"
+                  ><i class="fa-solid fa-comments"></i
+                ></span>
+                <span class="Ntitle">Fatwa Gate</span>
+              </a>
+            </li>
+            <li class="Ritem">
+              <a href="Pages/Signout.html">
+                <span class="Nicon"
+                  ><i class="fa-solid fa-right-from-bracket"></i
+                ></span>
+                <span class="Ntitle">Sign Out</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="Ritem DL2M">
+          <i class="fa-solid fa-brush"></i>
+          <span>Switch Theme</span>
+        </li>
+        <li class="Ritem">
+          <i class="fa-solid fa-list-check"></i>
+          <span><a href="Wered.html">Daily Wered </a></span>
+      </li>
+        <li class="Ritem">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span>Share Mushtaq</span>
+        </li>
+      </ul>
+      <div class="setting">
+        <li class="Ritem">
+          <i class="fa-solid fa-gear"></i>
+          <span>Settings</span>
+        </li>
+      </div>
+    </div>
+  </div>
+  <span class="overlay">
+  </span>
+  <div class="modalbox">
+    <i class="fa-solid fa-circle-exclamation fa-shake"></i>
+    <h2 id="msg">Account not Found</h2>
+    <div class="SObuttonS">
+      <button class="confirmbtn" onclick="RegiSwitch(); hideModal()">Create One</button>
+    </div>
+  </div>
+  <div class="DLM"><i class="fa-solid fa-sun"></i></div>
+  <div class="DLM goUp off"><i class="fa-solid fa-angles-up"></i></div>
+<script src="../JS-Scripts/App.js"></script>
+</body>
+
+</html>
